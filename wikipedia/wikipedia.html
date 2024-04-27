@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Search</title>
+    <style>
+        .container{
+            text-align: center;
+            margin:0 auto;
+        }
+        #inputBtn{
+            width: 600px;
+            height: 50px;
+            border:1pxsolid blue;
+            background-color: brown;
+            font-size:50px;
+            font-weight:20px;
+        }    
+    </style>
+</head>
+<body>
+    <h1>Wikipedia Search</h1>
+   <div>
+    <input type="text" id="inputBtn" value=""/>
+    <input type="button" value="Search" id="searchBtn" onclick="searchResults()"/>
+    <p id="result"></p>
+    <script>
+        function searchResults(){
+    var inputBtn = document.getElementById("inputBtn");
+    var result = document.getElementById("result")
+    result.innerHTML= inputBtn.value;
+        }
+    </script>
+</body>
+</html>
